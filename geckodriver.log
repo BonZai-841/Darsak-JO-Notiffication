@@ -1,0 +1,62 @@
+console.error: SearchCache: "_readCacheFile: Error reading cache file:" (new Error("", "(unknown module)"))
+1600111977652	Marionette	INFO	Listening on port 38965
+1600111977724	Marionette	WARN	TLS certificate errors will be ignored for this session
+1600111994615	Marionette	INFO	Stopped listening on port 38965
+console.error: SearchCache: "_readCacheFile: Error reading cache file:" (new Error("", "(unknown module)"))
+1600112324497	Marionette	INFO	Listening on port 45639
+1600112324605	Marionette	WARN	TLS certificate errors will be ignored for this session
+1600112344458	Marionette	INFO	Stopped listening on port 45639
+console.error: SearchCache: "_readCacheFile: Error reading cache file:" (new Error("", "(unknown module)"))
+1600112416187	Marionette	INFO	Listening on port 32823
+1600112416305	Marionette	WARN	TLS certificate errors will be ignored for this session
+console.error: SearchCache: "_readCacheFile: Error reading cache file:" (new Error("", "(unknown module)"))
+1600112430734	Marionette	INFO	Listening on port 39547
+1600112430756	Marionette	WARN	TLS certificate errors will be ignored for this session
+1600112436535	Marionette	INFO	Stopped listening on port 32823
+1600112626016	Marionette	INFO	Stopped listening on port 39547
+console.error: SearchCache: "_readCacheFile: Error reading cache file:" (new Error("", "(unknown module)"))
+1600112677851	Marionette	INFO	Listening on port 34661
+1600112677944	Marionette	WARN	TLS certificate errors will be ignored for this session
+console.error: SearchCache: "_readCacheFile: Error reading cache file:" (new Error("", "(unknown module)"))
+1600112737172	Marionette	INFO	Listening on port 41199
+1600112737242	Marionette	WARN	TLS certificate errors will be ignored for this session
+1600112738501	Marionette	INFO	Stopped listening on port 34661
+console.error: SearchCache: "_readCacheFile: Error reading cache file:" (new Error("", "(unknown module)"))
+1600112751150	Marionette	INFO	Listening on port 35809
+1600112751207	Marionette	WARN	TLS certificate errors will be ignored for this session
+1600112758626	Marionette	INFO	Stopped listening on port 41199
+console.error: SearchCache: "_readCacheFile: Error reading cache file:" (new Error("", "(unknown module)"))
+console.error: Region.jsm: "Error fetching region" (new TypeError("NetworkError when attempting to fetch resource.", ""))
+console.error: Region.jsm: "Failed to fetch region" (new Error("NO_RESULT", "resource://gre/modules/Region.jsm", 343))
+console.error: services.settings: 
+  main/messaging-experiments Signature failed  TypeError: NetworkError when attempting to fetch resource.
+console.error: (new Error("Connection closed before committing the transaction.", "resource://gre/modules/Sqlite.jsm", 688))
+1600112799130	Marionette	INFO	Stopped listening on port 35809
+console.error: SearchCache: "_readCacheFile: Error reading cache file:" (new Error("", "(unknown module)"))
+1600112803653	Marionette	INFO	Listening on port 45289
+1600112803703	Marionette	WARN	TLS certificate errors will be ignored for this session
+console.error: SearchCache: "_readCacheFile: Error reading cache file:" (new Error("", "(unknown module)"))
+1600112818683	Marionette	INFO	Listening on port 42143
+1600112818733	Marionette	WARN	TLS certificate errors will be ignored for this session
+1600112822390	Marionette	INFO	Stopped listening on port 45289
+1600112972962	Marionette	INFO	Stopped listening on port 42143
+console.error: SearchCache: "_readCacheFile: Error reading cache file:" (new Error("", "(unknown module)"))
+1600112977027	Marionette	INFO	Listening on port 46841
+1600112977062	Marionette	WARN	TLS certificate errors will be ignored for this session
+console.error: SearchCache: "_readCacheFile: Error reading cache file:" (new Error("", "(unknown module)"))
+1600112995730	Marionette	INFO	Listening on port 37393
+1600112995799	Marionette	WARN	TLS certificate errors will be ignored for this session
+1600113005585	Marionette	INFO	Stopped listening on port 46841
+1600113009762	Marionette	INFO	Stopped listening on port 37393
+console.error: SearchCache: "_readCacheFile: Error reading cache file:" (new Error("", "(unknown module)"))
+1600113022319	Marionette	INFO	Listening on port 36551
+1600113022399	Marionette	WARN	TLS certificate errors will be ignored for this session
+1600113101568	Marionette	INFO	Stopped listening on port 36551
+console.error: SearchCache: "_readCacheFile: Error reading cache file:" (new Error("", "(unknown module)"))
+1600113218421	Marionette	INFO	Listening on port 38251
+1600113218488	Marionette	WARN	TLS certificate errors will be ignored for this session
+1600113399681	Marionette	INFO	Stopped listening on port 38251
+console.error: SearchCache: "_readCacheFile: Error reading cache file:" (new Error("", "(unknown module)"))
+1600113414460	Marionette	INFO	Listening on port 38479
+1600113414552	Marionette	WARN	TLS certificate errors will be ignored for this session
+1600113514447	Marionette	INFO	Stopped listening on port 38479

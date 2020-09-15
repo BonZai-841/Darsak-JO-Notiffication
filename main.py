@@ -1,10 +1,13 @@
 from selenium import webdriver
 
+# --------- Use FireFox -----------
 driver = webdriver.Firefox()
 
+# ------------- Open darsak.gov.jo and assert ---------------
 driver.get("https://darsak.gov.jo/auth/login")
 assert "منصة درسك التعليمية" in driver.title
 
+# ------------- Username (National ID) ---------------
 username = driver.find_element_by_id('national_id')
 username.clear()
 username.send_keys("2001230470")
@@ -22,5 +25,7 @@ day_of_birth = driver.find_element_by_id("day")
 day_of_birth.clear
 day_of_birth.send_keys("13")
 
-# ----------Press Log In-------------
+# ---------- Log In -------------
+driver.implicitly_wait(5)
 driver.find_element_by_id("loginButton").click()
+

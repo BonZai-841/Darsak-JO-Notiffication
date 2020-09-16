@@ -1,12 +1,19 @@
 from selenium import webdriver
 from selenium.webdriver.support.select import Select
-from selenium.webdriver.common.keys import Keys  #
+from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 import time
 from datetime import date
+import pandas as pd
 
+# ----------- Global Variables --------------
+today_lessons = []
+full_name = []
+grade = []
+website_date = []
+# -------------- Sign in credentials --------------
 national_id = "2001230470"
 year = "2006"
 month = "05"
@@ -20,6 +27,7 @@ assert "منصة درسك التعليمية" in driver.title
 
 
 def sign_in():
+
     time.sleep(1)
     username = driver.find_element_by_id('national_id')
     username.clear()
@@ -46,9 +54,12 @@ def sign_in():
 # ------------- Daily lessons parameters ---------------
 
 
-def get_parameters():
-
+def get_parameters(today_lessons=today_lessons):
+    global full_name
+    global grade
+    global website_date
     try:
+
         full_name = WebDriverWait(driver, 10).until(
             EC.presence_of_element_located((By.CLASS_NAME, "_auth_user_fullname"))
 
@@ -66,17 +77,27 @@ def get_parameters():
 
         today_lessons_class_name = driver.find_elements_by_class_name("card-title")
         today_lessons_count = len(today_lessons_class_name)
-        today_lessons = []
 
         for lesson in range(today_lessons_count):
             today_lessons += today_lessons_class_name[lesson].text.split("\n")
-        print(today_lessons)
 
     finally:
         print("DONE")
-        driver.quit()
+
+
+def convert_to_csv():
+    csv = pd.DataFrame({
+        "حصص اليوم |": today_lessons,
+        "اسم الطالب |": full_name,
+        "تاريخ اليوم |": website_date,
+        "الصف |": grade,
+
+    })
+    print(csv)
+    csv.to_csv("CSV/Darsak.csv")
 
 
 if __name__ == "__main__":
     sign_in()
     get_parameters()
+    convert_to_csv()

@@ -18,14 +18,14 @@ class Darsak:
         self.national_num = str(national_num)
         self.driver = webdriver.Firefox()
         self.today_lessons = []
+        self.archived_lessons = []
         self.full_name = ""
         self.grade = ""
         self.website_date = ""
         self.full_name = ""
 
     def open_website(self, url):
-        self.driver.get(url)
-        assert "منصة درسك التعليمية" in self.driver.title
+        self.driver.get(str(url))
 
     def close_website(self):
         self.driver.quit()
@@ -53,7 +53,7 @@ class Darsak:
         select_day = Select(self.driver.find_element_by_id(day_id))
         select_day.select_by_visible_text(self.day)
 
-    def get_parameters(self):
+    def get_name_grade_website_date(self):
         # Get the full name , grade, website date, today's lessons
 
         self.full_name = WebDriverWait(self.driver, 10).until(
